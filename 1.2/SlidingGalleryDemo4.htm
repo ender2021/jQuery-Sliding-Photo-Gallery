@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MeadMiracle.com Sliding Image Gallery Demo #4</title>
+    <link href="Styles/default.css" type="text/css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/jquery.slidingGallery-1.2.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(function() {
+            $('div.gallery img').slidingGallery({ useCaptions: true, container: $('div.gallery') });
+        });
+    </script>
+    <style type="text/css">
+        div.gallery img 
+        {
+        	border: solid 1px white;
+        }
+    </style>
+</head>
+<body style="top:0px; left:0px; text-align:left; padding:0px; margin:0px;">
+    <div class="gallery" style="top:300px; left:0px; width:1000px; height:500px;">
+        <img src="Images/SlidingGallery/atat.jpg" caption="A papercraft AT-AT that I made" />
+        <img src="Images/SlidingGallery/babyLeia.jpg" caption="My dog when she was a wee puppy" />
+        <img src="Images/SlidingGallery/cutout.jpg" caption="A bit of Photoshop fun" />
+        <img src="Images/SlidingGallery/gunslinger1.jpg" class="start" caption="A woodburning of mine, inspired by Dark Tower series by Stephen King" layout="portrait" />
+        <img src="Images/SlidingGallery/gunslinger2.jpg" caption="Another woodburning of mine, inspired by Dark Tower series by Stephen King" layout="portrait" />
+        <img src="Images/SlidingGallery/lights.jpg" caption="Some lights in the lobby of the Rio in Vegas" layout="landscape" />
+        <img src="Images/SlidingGallery/lion.jpg" caption="A baby lion at the MGM Grand" />
+        <img src="Images/SlidingGallery/punisher.jpg" caption="Me dressed up as the Punisher for halloween + a bit of photoshop" layout="portrait" />
+        <img src="Images/SlidingGallery/royBatty.jpg" caption="A cake I made for my friend Matt" layout="portrait" />
+        <img src="Images/SlidingGallery/stainedGlass.jpg" caption="A stained glass roof in Caesar's Palace" />
+        <img src="Images/SlidingGallery/tower.jpg" caption="A tower in Solvang" layout="portrait" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sliding Gallery v.2</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.slidingGallery-2.0.js"></script>
+    <script type="text/javascript">
+
+        $(function() {
+            var opts = { 
+                caption: { 
+                    show: {
+                        imgsrc: 'http://www.meadmiracle.com/Images/SlidingGallery/captionUpArrow.png'
+                    },
+                    hide: {
+                        imgsrc: 'http://www.meadmiracle.com/Images/SlidingGallery/captionDownArrow.png'
+                    },
+                    enabled: true,
+                    location: 'bottom'
+                },
+                autoplay: {
+                    enabled: true
+		    }
+            };
+            $('.gallery').css('top', '500px').slidingGallery(opts);
+        });
+    </script>
+</head>
+<body>
+    <div class="gallery">        <img src="http://www.meadmiracle.com/Images/SlidingGallery/atat.jpg" alt="A papercraft AT-AT that I made" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/babyLeia.jpg" alt="My dog when she was a wee puppy" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/cutout.jpg" alt="A bit of Photoshop fun" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/gunslinger1.jpg" class="start" alt="A woodburning of mine, inspired by Dark Tower series by Stephen King" data-layout="portrait" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/gunslinger2.jpg" alt="Another woodburning of mine, inspired by Dark Tower series by Stephen King" data-layout="portrait" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/lights.jpg" alt="Some lights in the lobby of the Rio in Vegas" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/lion.jpg" alt="A baby lion at the MGM Grand" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/punisher.jpg" alt="Me dressed up as the Punisher for halloween + a bit of photoshop" data-layout="portrait" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/royBatty.jpg" alt="A cake I made for my friend Matt" data-layout="portrait" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/stainedGlass.jpg" alt="A stained glass roof in Caesar's Palace" />        <img src="http://www.meadmiracle.com/Images/SlidingGallery/tower.jpg" alt="A tower in Solvang" data-layout="portrait" />    </div>
+</body>
+</html>
